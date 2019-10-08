@@ -1,0 +1,3 @@
+<td><?php if ($line1) {$tambahBulan = date('Y-m-d', strtotime("+".$line1->BLNKREDIT." months", strtotime($line1->TGL_KREDIT))); $tambahTahun = date('Y-m-d', strtotime("+".$line1->THNKREDIT." years", strtotime($tambahBulan))); echo indonesian_date($tambahTahun);}?></td>
+
+class="validate[required,length[0,100]] text-input"

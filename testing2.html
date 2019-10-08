@@ -1,0 +1,17 @@
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function() {
+            $.ajax({
+
+                type: "GET",
+                url: "http://202.169.224.53/data/arrayporn.php",
+                //data: "id=" + id,
+                context: this,
+                success: function(data) {
+                    //$(this).next('.returned-details').html(data);
+					document.write(data);
+                }
+
+            });
+        });
+</script>
